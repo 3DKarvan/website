@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Announcement Input</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 10px;
+        align-items: center;
+      }
+
+      input, button {
+        width: 80%;
+        box-sizing: border-box;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <label for="sentence1">Sentence:</label>
+  <input type="text" id="sentence1">
+
+  <label for="count">Repeat Count:</label>
+  <input type="number" id="count" min="1" value="5">
+
+  <button onclick="updateAnnouncement()">Update Announcement</button>
+
+  <script>
+    function updateAnnouncement() {
+      const sentence1 = document.getElementById('sentence1').value;
+      const count = document.getElementById('count').value;
+
+      if (!sentence1) {
+        alert("Please enter a sentence for the announcement.");
+        return;
+      }
+
+      localStorage.setItem('sentence1', sentence1);
+      localStorage.setItem('count', count);
+
+      alert("Your announcement has been updated!");
+
+      window.location.href = 'home.html';
+    }
+  </script>
+
+</body>
+</html>

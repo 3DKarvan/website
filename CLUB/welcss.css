@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.hero-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(30%);
+    background-size: cover;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    display: inline;
+    z-index: 1;
+    display: none;
+   
+}
+
+.bubbles{
+    position: relative;
+    display: flex;
+    background-color: black;
+    filter: brightness(100%);
+
+}
+
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 15px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 500s linear infinite;
+    animation-duration: calc(40s / var(--i));
+    z-index: 1;
+    display: block;
+}
+
+.bubbles span:nth-child(even){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+@keyframes animate
+{
+    0%{
+        transform: translateY(-50vh) scale(0);
+    }
+    100%{
+        transform: translateY(150vh) scale(2);
+    }
+}
+
+
+user agent stylesheet
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.navbar{
+    color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 20px;
+    box-shadow: white 0px 5px 8px 0px, rgb(217, 211, 211) 0px 2px 6px 2px;
+}
+.navbardrop{
+    display: none;
+}
+.menudrop{
+    display: none;
+}
+
+@media (max-width:700px){
+    .navbar ul{
+        display: none;
+    }
+    .menudrop{
+        display: block;
+        width: 40px;
+        height: auto;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin: 20px;
+        
+        
+    }
+    .navbardrop{
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        right: 0px;
+        padding-top:50px ;
+        background-color: red;
+        display: none;
+        box-shadow: none;
+    }
+    .navbaruldrop{
+        text-decoration: none;
+        padding-top: 20px ;
+        display: inline;
+    }
+    .navbaruldrop a{
+        display: block;
+        margin-top: 50px;
+        font-size: 20px;
+        margin-left: 20%;
+        text-decoration: none;
+        color: white;
+    }
+    .hero-bg{
+        filter: brightness(50%);
+    }
+    .buttonnav{
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        position: absolute;
+        top: 0;
+        margin: 50px;
+        font-size: 30px;
+    }
+    .peclogo{
+        margin-top: 20px;
+    }
+    #navbar{
+        margin-top: 10px;
+    }
+}
+
+li{
+    color: rgb(255, 252, 252);
+    
+}
+
+li{
+    cursor: pointer;
+}
+
+.header{
+    margin: 0px;
+    background-color: black;
+    
+}
+
+.option-buttons{
+    text-align: right;
+    margin: 0px;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+.navbar-content{
+    text-align: center;
+    display: inline-block;
+}
+
+.navbarlinks {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.navbarul a:hover{
+    text-decoration: underline;
+    color: yellow;
+    transition: 1s;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+}
+.peclogo{
+    width: 600px;
+    height: 200px;
+}
+footer{
+    background-color: gray;
+    color: white;
+    width: 100%;
+}
+.welcomep{
+    color: white;
+}
+@media (max-width: 700px) {
+    .bubbles span{
+        width: 1px;
+        height: 1px;
+        border-radius: 50%;
+    }
+    .header{
+        width: 100%;
+    }
+    .peclogo{
+        width: 300px;
+        height: auto;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .wellogo{
+        width: 30%;
+        height: auto;
+    }
+
+    
+}

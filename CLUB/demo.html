@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Announcement Bar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #navbar {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .announcement-container {
+      display: flex;
+      white-space: nowrap; /* Ensure text stays on one line */
+      overflow: hidden;
+    }
+
+    .word {
+      padding-right: 10px; /* Adjust the spacing between words as needed */
+    }
+
+    @keyframes flowText {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .announcement-container {
+      animation-duration: 5s; /* Reduced animation duration */
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-name: flowText;
+    }
+
+    /* Adjust the initial delay for a smoother transition */
+    .announcement-container:nth-child(2) {
+      animation-delay: -15s;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="navbar">
+    <div class="announcement-container">
+      <!-- Words will be dynamically added here -->
+    </div>
+  </div>
+
+  <script>
+    // Function to update the announcement text
+    function updateAnnouncement(text, count) {
+      const words = text.split(' ');
+      const repeatedWords = Array(count).fill(words).flat(); // Repeat the words
+      const wordElements = repeatedWords.map(word => `<span class="word">${word}</span>`);
+      document.querySelector("#navbar > .announcement-container").innerHTML = wordElements.join('');
+    }
+
+    // Fetch data from localStorage
+    const sentence1 = localStorage.getItem('sentence1') || 'Default Sentence 1';
+    const count = localStorage.getItem('count') || 5;
+
+    // Update the announcement
+    updateAnnouncement(sentence1, count);
+
+    // Example: Update the announcements every 5 seconds
+    setInterval(function() {
+      // You can replace this text with the dynamic content you want to display
+      updateAnnouncement(sentence1, count);
+    }, 5000);
+  </script>
+
+</body>
+</html>

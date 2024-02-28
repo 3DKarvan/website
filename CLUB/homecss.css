@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.hero-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(10%);
+    background-size: cover;
+}
+@media (max-width:700px){
+    .hero-bg{
+        filter: brightness(30%);
+    }
+}
+nav{
+    color: black;
+    padding: 15px;
+    display: fixed;
+}
+li,h1,ul{
+    display: inline;
+}
+ul{
+    margin-left: 40%;
+}
+li{
+    color: rgb(255, 252, 252);
+    
+}
+ul :hover{
+    color:black;
+}
+li{
+    cursor: pointer;
+}
+.intro, h1{
+    text-align: center;
+}
+.header{
+    margin: 0px;
+    background-color: black;
+}
+
+.navbar{
+    
+   
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 100%;
+
+    margin: 0px;
+}
+.navbar{
+    box-shadow: white 0px 5px 8px 0px, rgb(217, 211, 211) 0px 2px 6px 2px;
+    margin: 0px;
+    color: white;
+}
+.navbarul{
+    display: flex;
+   /*
+   column-gap: 10px; */
+}
+.navbarlinks{
+    display: flex;
+    padding-left: 7px;
+}
+.navbarlinks {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.navbarul a:hover{
+    text-decoration: underline;
+    color: yellow;
+    transition: 1s;
+}
+.logopec{
+    width: 500px;
+    height: 150px;
+}
+.about{
+    display: block;
+
+}
+.aboutcontainer{
+    width: 80%;
+    box-shadow: 0 0 10px rgba(145,7,187,.7), 0 0 5px rgba(38,4,160,.7), 0 0 5px rgba(227,3,178,.7), 0 0 10px rgba(146,2,165,.7);
+    height: auto;
+    border-radius: 20px;
+    color: white;
+    display:block;
+    
+
+}
+.aboutimag{
+    width: 30%;
+    height: auto;
+   
+}
+.vision{
+    display: block;
+    width: 100%; 
+    transition: 2s;    
+}
+.visioncontainer{
+    width: 80%;
+   margin: 50px;
+    
+    display: block;
+    box-shadow: 0 0 10px rgba(145,7,187,.7), 0 0 5px rgba(38,4,160,.7), 0 0 5px rgba(227,3,178,.7), 0 0 10px rgba(146,2,165,.7);
+    height: auto;
+    border-radius: 20px;
+    color: white;
+
+
+}
+.visionimag{
+    width: 30%;
+    height: auto;
+   
+}
+.mision{
+    display: block;
+    width: 100%;
+    right: 0px;
+    top: 700px; 
+}
+.misioncontainer{
+    width: 80%;
+    
+    
+    display: block;
+    
+    box-shadow: 0 0 10px rgba(145,7,187,.7), 0 0 5px rgba(38,4,160,.7), 0 0 5px rgba(227,3,178,.7), 0 0 10px rgba(146,2,165,.7);
+    height: auto;
+    border-radius: 20px;
+    color: white;
+
+
+}
+.misionimag{
+    width: 30%;
+    height: auto;
+   
+}
+.logopec2{
+    position: absolute;
+    left: 0px;
+    margin-left: 80px;
+    margin-top: 40px;
+    width: 40%;
+    
+
+}
+
+.logopec{
+    
+    margin-right: 50px;
+    margin-top: 40px;
+}
+
+
+.logocl{
+
+    margin-left: 80px;
+    margin-top: 40px;
+    width: 400px;
+    
+
+}
+
+
+.introhr{
+    padding: 10px;
+    stroke: 20px;
+}
+.intro h1{
+    color: white;
+}
+
+
+.wellogo{
+    width: 300px;
+    height: 300px;
+}
+.formlinkim{
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+}
+.peclogo{
+    width: 600px;
+    height: 200px;
+}
+
+
+    
+   
+
+td{
+    padding: 10px;
+}
+.alabout{
+    display: inline-block;
+    height: auto;
+}
+.contact{
+    width: 150px;
+    height: auto;
+    background: none;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(145,7,187,.7), 0 0 5px rgba(38,4,160,.7), 0 0 5px rgba(227,3,178,.7), 0 0 10px rgba(146,2,165,.7);
+}
+.contact a{
+    font-size: 20px;
+    color: white;
+    font-weight: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(145,7,187,.7), 0 0 5px rgba(38,4,160,.7), 0 0 5px rgba(227,3,178,.7), 0 0 10px rgba(146,2,165,.7);
+
+}
+.contact a:hover{
+    font-size: 30px;
+}
+.memberbut{
+    padding-bottom: 5px;
+
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(145,7,187,.7), 0 0 5px rgba(38,4,160,.7), 0 0 5px rgba(227,3,178,.7), 0 0 10px rgba(146,2,165,.7);
+
+  
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+    color:rgb(180, 19, 19);
+    background-color: gray;
+    border: none;
+    text-decoration: none;  
+    z-index: 1; 
+    display: inline-block;
+}
+.memberlink{
+    text-decoration: none;
+    
+
+    color: black;
+}
+.event{
+    width: 200px;
+    height: 200px;  
+    color: black;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(145,7,187,.7), 0 0 5px rgba(38,4,160,.7), 0 0 5px rgba(227,3,178,.7), 0 0 10px rgba(146,2,165,.7);
+
+    
+   
+    
+}
+.logonav{
+    width: 10px;
+    height: 50px;
+}
+.bottombox{
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+.footer{
+    margin-top: 10px;
+    padding: 40px;
+    background-color: black;
+    display: inline-block;
+    
+}
+
+.event{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(35, 33, 33);
+    z-index: 2;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+
+
+}
+.sectionvis{
+    width: 80%;
+    display: inline-block;
+}
+
+.sectionfaq{
+    min-height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 20px;
+    margin: 2rem 0rem;
+}
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    color: white;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question h3{
+    font-size: 1.8rem;
+   
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.5;
+    font-size: 1rem;
+
+}
+.memberbut :hover{
+    color: red;
+    transition: 0.5s;
+}
+footer{
+    background-color: gray;
+    color: white;
+    width: 100%;
+}
+.navbardrop{
+    display: none;
+}
+.menudrop{
+    display: none;
+}
+
+@media (max-width:700px){
+    *{
+        font-size: 19px;
+    }
+    .deptp{
+        font-size: 25px;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .menudrop{
+        display: block;
+        width: 40px;
+        height: auto;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin: 20px;
+        
+        
+    }
+    .navbardrop{
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        right: 0px;
+        padding-top:50px ;
+        background-color: red;
+        display: none;
+        box-shadow: none;
+    }
+    .navbaruldrop{
+        text-decoration: none;
+        padding-top: 20px ;
+        display: inline;
+    }
+    .hero-bg{
+        filter: brightness(30%);
+    }
+    .navbaruldrop a{
+        display: block;
+        margin-top: 50px;
+        font-size: 20px;
+        margin-left: 20%;
+        text-decoration: none;
+        color: white;
+    }
+    .buttonnav{
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        position: absolute;
+        top: 0;
+        margin: 10px;
+        font-size: 30px;
+    }
+}
+.faq.active .answer{
+    max-height: 300px;
+    animation: fade 0.01s ease-in-out;
+}
+.faq.active svg{
+    transform: rotate(180deg);
+}
+svg{
+    transition: transfrom 5s ease-in;
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transition: translateY(0px);
+    }
+}
+.preconnect{
+    .protest-revolution-regular {
+        font-family: "Protest Revolution", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+}
+@media (max-width: 700px){
+    *{
+        width: auto;
+        height: auto;
+    }
+}
+
